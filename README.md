@@ -40,6 +40,8 @@ If you do not use Linux, see previous section for a prebuilt wallet. There are t
     > 3. **make -f makefile.unix**
     > 4. **sudo make install** &nbsp; &nbsp; {Alternatively, don't run that command, and just place the binary wherever you want}
 
+Trgger workflow
+
     ### NOTES:
     - On new versions of Linux such as Ubuntu 18.04 or Debain 9, additionally install: "sudo apt-get install libssl1.0-dev"
     - On older Linux versions, like Ubuntu 14.04, use: libdb4.8 or libdb5.1. Newer Ubuntu 16.04, use: libdb5.3++-dev.
