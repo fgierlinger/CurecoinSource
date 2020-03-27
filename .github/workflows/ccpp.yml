@@ -14,5 +14,15 @@ jobs:
     steps:
     - uses: actions/checkout@v2.0.0
 
+    - name: install required packages
+      run: apt-get update && apt-get install --no-install-recommends -y \
+	build-essential \
+	libssl-dev \
+	libdb5.1-dev \
+	libdb5.1++-dev \
+	libboost-all-dev \
+	libqrencode-dev \
+	miniupnpc libminiupnpc-dev \
+	git ca-certificates
     - name: make
       run: cd src && make -f makefile.unix
