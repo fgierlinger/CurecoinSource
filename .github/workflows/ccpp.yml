@@ -9,13 +9,13 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-trusty
+    runs-on: ubuntu-16.04
 
     steps:
     - uses: actions/checkout@v2.0.0
 
     - name: install required packages
-      run: sudo apt-get update && sudo apt-get install --no-install-recommends -y  build-essential libssl-dev libdb5.1-dev libdb5.1++-dev libboost-all-dev libqrencode-dev miniupnpc libminiupnpc-dev git ca-certificates 
+      run: sudo apt-get update && sudo apt-get install --no-install-recommends -y  build-essential libssl-dev libdb5.3-dev libdb5.3++-dev libboost-all-dev libqrencode-dev miniupnpc libminiupnpc-dev git ca-certificates 
       
 
     - name: make
